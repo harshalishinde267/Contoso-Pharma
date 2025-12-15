@@ -1,0 +1,129 @@
+.med-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.med-search-container {
+  /* flex: 1; */
+  margin-right: 20px;
+  /* width: 600px; */
+}
+
+.med-locations-container {
+  flex: 1;
+  background-color: #4aabae;
+  border-radius: 5px;
+  padding: 20px;
+  height: 170vh;
+}
+
+.med-locations-container h3 {
+  color: white;
+  font-size: 35px;
+}
+.med-locations-list {
+  list-style: none;
+  padding: 5px;
+}
+
+.medicine-slider {
+  width: 400px;
+  background-color: #4aabae;
+  border-radius: 5px;
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  /* overflow-y: auto; */
+  height: 170vh;
+}
+
+.slider-title {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.medicine-list {
+  list-style: none;
+  padding: 0;
+}
+
+.medicine-list li {
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.medicine-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.medicine-list li a:hover {
+  color: white;
+}
+
+input[type="med-text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.med-locations-list li {
+  background-color: #5cc3c7;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #5cc3c7;
+  padding: 10px;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .med-container {
+    flex-direction: column;
+  }
+
+  .med-search-container {
+    order: 2;
+  }
+
+  .med-locations-container {
+    order: 1;
+  }
+
+  .search-input {
+    flex-direction: column;
+  }
+
+  .search-input input[type="med-text"] {
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    margin-left: 0;
+  }
+
+  .medicine-slider {
+    display: none; /* Hide the medicine list */
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .med-search-container {
+    width: 50%;
+  }
+
+  .med-locations-container {
+    width: 50%;
+  }
+}

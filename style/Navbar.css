@@ -1,0 +1,163 @@
+.navbar {
+  background-color: #01959a;
+  padding: 10px 20px;
+  height: 70px;
+}
+
+.navbar-nav {
+  font-size: 1.2rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar-title {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-right: 450px;
+}
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: "\25BC";
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #38acb0;
+  padding: 10px;
+  list-style: none;
+  width: 350%;
+  margin-top: 20px;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #01959a;
+  padding: 10px 20px;
+  height: 70px;
+}
+
+.navbar-title {
+  color: white;
+  margin: 0;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #38acb0;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  text-align: start;
+  width: 300px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-btn.hide {
+  display: none;
+}
+
+.nav-btn svg {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.nav-link.active {
+  color: antiquewhite; /* Change this to your active link color */
+  font-weight: bold; /* Optional: make it bold */
+}
+
+@media only screen and (min-width: 769px) {
+  /* Hide the menu button on larger screens */
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #01959a;
+  }
+
+  .navbar-nav.show {
+    display: block;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+}

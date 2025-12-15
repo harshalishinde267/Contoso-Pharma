@@ -1,0 +1,76 @@
+.cards-container {
+  /* grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); Adjust width as needed */
+  margin: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: grid;
+  grid-template-columns: revert;
+  gap: 20px;
+  align-content: center;
+}
+
+.card {
+  color: white;
+  background-color: #4aabae;
+  display: flex; /* Enable flexbox layout for internal content */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-image {
+  width: 300px; /* Adjust image width as needed */
+  height: 200px;
+  object-fit: cover; /* Fit image within container */
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.card-content {
+  margin-top: 30px;
+  padding: 20px;
+  flex: 1; /* Take up remaining space */
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    font-size: 12px;
+    /* grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );  */
+    margin-left: 20px; /* Adjust margins for medium screens */
+    margin-right: 20px;
+  }
+
+  .card-image {
+    width: 100px; /* Adjust image width for medium screens */
+    height: 100px;
+    margin-right: 0; /* Remove margin for medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+    margin-left: 10px; /* Adjust margins for small screens */
+    margin-right: 10px;
+  }
+
+  .card {
+    flex-direction: column; /* Arrange card content vertically for small screens */
+  }
+
+  .card-image {
+    width: 100%; /* Image width takes full width of the card */
+    height: auto;
+    margin-right: 0; /* Remove margin for image */
+  }
+
+  .card-content {
+    padding: 20px;
+    text-align: center; /* Center-align text for small screens */
+  }
+}

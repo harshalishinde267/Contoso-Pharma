@@ -1,0 +1,22 @@
+.medicine-info-page {
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 3;
+  padding: 20px;
+}
+
+.main-content h1 {
+  margin-bottom: 10px;
+}

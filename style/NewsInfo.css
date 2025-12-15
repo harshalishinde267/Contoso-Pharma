@@ -1,0 +1,41 @@
+.accordion {
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.news-title {
+  text-align: center;
+}
+.news-p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.accordion-header {
+  margin-bottom: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+}
+
+.accordion-header span {
+  margin-right: 5px;
+}
+
+.accordion-content {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header span {
+  order: 1; /* Set the order to 1, so it appears on the right */
+}

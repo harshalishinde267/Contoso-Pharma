@@ -1,0 +1,59 @@
+.home-background-container {
+  position: relative;
+  background-image: url("../assets/mainhero.jpg");
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(238, 243, 244, 0.5);
+  height: 100%;
+}
+.home-content {
+  size: 2rem;
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2; /* Ensure the navbar is above the pseudo-element overlay */
+}
+
+.dropdown {
+  position: relative;
+  z-index: 3; /* Ensure the dropdown is above the navbar and overlay */
+}
+
+.home-content h1 {
+  font-size: 4rem;
+}
+
+.home-content p {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-background-container {
+    height: 80vh; /* Adjust the height for medium screens */
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 576px) {
+  .home-background-container {
+    height: 60vh; /* Adjust the height for smaller screens */
+  }
+}
